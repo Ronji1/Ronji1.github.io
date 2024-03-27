@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>McCall</title>
+    <h1>Holiday Photo's</h1>
+    <link rel="stylesheet" href="CSS/Holiday.css">
+</header>
+
+<div class="topnav" id="myTopnav">
+    <a href="Index.html" class="active">Home</a>
+    <a href="About.html">About</a>
+    <a href="Graduation.html">Graduation</a>
+    <a href="Weddings.html">Weddings</a>
+    <a href="Pets.html">Pets</a>
+    <a href="Family.html">Family</a>
+    <a href="#about">Holiday Pictures</a>   
+    <a href="Gallery.html">Gallery</a>   
+    <a href="Photographers.html">Photographers</a>
+    <a href="Contact.html">Contact Us</a>
+    <input type="text" placeholder="Search..">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </a>
+</div>
+
+<ul class="breadcrumb">
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="Holiday.html">Holiday Pictures</a></li>
+  <li>Holiday Pictures</li>
+    </ul>
+
+<body>
+
+    
+<div class="row">
+    <div class="column">
+      <img src="Photo_Images/Holiday_1.jpg" alt="Christmas Tree" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="Photo_Images/Holiday_2.jpg" alt="Happy Easter" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="Photo_Images/Holiday_3.jpg" alt="July 4th" style="width:100%"  onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="Photo_Images/Holiday_4.jpg" alt="Halloween" style="width:100%"  onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="Photo_Images/Holiday_5.jpg" alt="Day of the Dead" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Photo_Images/Holiday_6.jpg" alt="Thanksgiving" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="Photo_Images/Holiday_7.jpg" alt="thanksgiving Family" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+
+  
+  
+  
+  <div class="container">
+    
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    
+    <img id="expandedImg" style="width:100%">
+  
+    
+    <div id="imgtext"></div>
+  </div> 
+
+
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+
+function myFunction(imgs) {
+  
+  var expandImg = document.getElementById("expandedImg");
+  
+  var imgText = document.getElementById("imgtext");
+  
+  expandImg.src = imgs.src;
+  
+  imgText.innerHTML = imgs.alt;
+  
+  expandImg.parentElement.style.display = "block";
+} 
+
+    </script>
+
+
+</body>
+
+<footer>
+    ©2023 By McCall Photography
+</footer>
+
+
+
+
+
+
+
+</html>

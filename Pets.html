@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>McCall</title>
+        <h1>Pet's</h1>
+        <link rel="stylesheet" href="CSS/Pets.css">
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="Index.html" class="active">Home</a>
+        <a href="About.html">About</a>
+        <a href="Graduation.html">Graduation</a>
+        <a href="Weddings.html">Weddings</a>
+        <a href="Pets.html">Pets</a>
+        <a href="Family.html">Family</a>
+        <a href="Holiday.html">Holiday Pictures</a>   
+        <a href="Gallery.html">Gallery</a>   
+        <a href="Photographers.html">Photographers</a>
+        <a href="Contact.html">Contact Us</a>
+        <input type="text" placeholder="Search..">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </a>
+    </div>
+
+    <ul class="breadcrumb">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Pets.html">Pets</a></li>
+      <li>Pets</li>
+        </ul>
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+    </script>
+
+
+    <body>
+
+         
+<div class="slideshow-container">
+
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="Photo_Images/Pets_1.jpg" style="width:100%">
+      <div class="text">Dog on a Beach.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img src="Photo_Images/Pets_2.jpg" style="width:100%">
+      <div class="text">Woman Reading to her dog.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="Photo_Images/Pets_3.jpg" style="width:100%">
+      <div class="text">A Horse eating.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src="Photo_Images/Pets_4.jpg" style="width:100%">
+        <div class="text">New dog.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src="Photo_Images/Pets_5.jpg" style="width:100%">
+        <div class="text">Family group picture.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src="Photo_Images/Pets_6.jpg" style="width:100%">
+        <div class="text">Handsome fellow.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <img src="Photo_Images/Pets_7.jpg" style="width:100%">
+        <div class="text">Hungry kitty.</div>
+      </div>
+  
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+  </div> 
+
+  <script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); 
+} 
+  </script>
+
+    </body>
+
+
+
+
+    <footer>
+      ©2023 By McCall Photography
+    </footer>
+
+
+</html>
